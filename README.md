@@ -9,6 +9,9 @@ Por definição ele traz todos os valores da sequência e compara com a solicita
 Por exemplo:
 
 Quero saber se o número 5 faz parte da sequência e qual posição ele se encontra (posição essa considerando a seqência 1,1,2,3,5...).
+
 Ele calcula e descobre que sim faz parte e se encotnra na posição 5.
+
 Quero também saber qual o numero ocupa a posição 11.
+
 Ele retorna o valor 89.
