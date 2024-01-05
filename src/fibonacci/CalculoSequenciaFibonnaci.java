@@ -11,27 +11,33 @@ public class CalculoSequenciaFibonnaci {
 
 		long valorC = valorA + valorB;
 		int contador = 1;
-		long valorE = 12;
+		long valorE = 22;
 
-		for (valorA = 0; valorC < valorE; valorC = valorA + valorB) {
+		for (valorA = 0; valorC < valorE; contador++) {
 
+			valorC = valorA + valorB;
 			valorA = valorB;
 			valorB = valorC;
-			contador++;
 			
-//			System.out.println(valorC);
+//			System.out.println("VLC " + valorC);
+//			System.out.println("Cont." + contador);
 
 		}
 		
 		if (valorC == valorE) {
 			System.out.println("Esse numero FAZ parte da sequência Fibonacci.");
 			System.out.println("E ocupa a posição: " + contador);
-//			System.out.println(valorC);
-//			System.out.println(contador);
+//			System.out.println("VLC " + valorC);
+//			System.out.println("VLA " + valorA);
+//			System.out.println("VLB " + valorB);
+//			System.out.println("Cont." + contador);
 			
 		} else {
 			System.out.println("Esse numero NÃO FAZ parte da sequência Fibonacci.");
-//			System.out.println(valorC);
+//			System.out.println("VLC " + valorC);
+//			System.out.println("VLA " + valorA);
+//			System.out.println("VLB " + valorB);
+//			System.out.println("Cont." + contador);
 		}
 
 	}

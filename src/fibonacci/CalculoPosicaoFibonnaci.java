@@ -11,23 +11,27 @@ public class CalculoPosicaoFibonnaci {
 
 		long valorC = valorA + valorB;
 		int contador = 1;
-		int contadorE = 7;
+		int contadorE = 11;
 		
 		
 
-		for (valorA = 0; contador < contadorE; valorC = valorA + valorB) {
+		for (valorA = 0; contador < contadorE; contador++) {
 
+
+			valorC = valorA + valorB;
 			valorA = valorB;
 			valorB = valorC;
-			contador++;
 			
-//			System.out.println(valorC);
-//			System.out.println(contador);
+//			System.out.println("VLC " + valorC);
+//			System.out.println("Cont." + contador);
 
 		}
+		
 			System.out.println("O numero que você procura é: " + valorC);
-//			System.out.println(valorC);
-//			System.out.println(contador);
+//			System.out.println("VLC " + valorC);
+//			System.out.println("VLA " + valorA);
+//			System.out.println("VLB " + valorB);
+//			System.out.println("Cont." + contador);
 	
 
 	}
