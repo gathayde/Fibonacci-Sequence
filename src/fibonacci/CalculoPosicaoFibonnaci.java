@@ -13,8 +13,6 @@ public class CalculoPosicaoFibonnaci {
 		int contador = 1;
 		int contadorE = 11;
 		
-		
-
 		for (valorA = 0; contador < contadorE; contador++) {
 
 
