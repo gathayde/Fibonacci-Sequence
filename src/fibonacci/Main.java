@@ -6,44 +6,24 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		Scanner entradaPergunta = new Scanner(System.in);
 		Scanner entradaValor = new Scanner(System.in);
-
-		long valorE = 0;
-		String entradaP;
+		
 
 		System.out.println("Sequência Fibonacci v2024 by Gabriel Athayde\n");
 
-		System.out.println("Gostaria de verificar um número? (S/N)");
-		entradaP = entradaPergunta.next();
+//		System.out.println("Gostaria de verificar um número? (S/N)");
 
-		if (entradaP.contains("S")) {
-			System.out.println("Digite o número: ");
-			valorE = entradaValor.nextLong();
+		System.out.println("Digite o número:");
+		
+		CalculoSequenciaFibonnaci valorE = new CalculoSequenciaFibonnaci();
+		
+		valorE.CalculoSequencialFibonnaci(entradaValor.nextLong());
+		
+//		System.out.println("Gostaria de saber qual o numero na sequência com base na sua posição? (S/N)");
 
-			System.out.println(valorE);
-		}
+//		System.out.println("Deseja SAIR? (S/N)");
 
-		System.out.println("Gostaria de saber qual o numero na sequência com base na sua posição? (S/N)");
-		entradaP = entradaPergunta.next();
-
-		if (entradaP.contains("S")) {
-			System.out.println("Digite em qual posição você quer saber o numero: ");
-			valorE = entradaValor.nextLong();
-			
-			System.out.println(valorE);
-		}
-
-		System.out.println("Deseja SAIR? (S/N)");
-		entradaP = entradaPergunta.next();
-
-		if (entradaP.contains("S")) {
-			System.out.println("Até logo!");
-		}else {
-			
-		}
-
-		System.out.println("FIM");
+//		System.out.println("FIM");
 
 		/* Sequência Fibonacci v2024 
 		 * Gostaria de verificar um número? 
@@ -60,7 +40,6 @@ public class Main {
 		 */
 
 		entradaValor.close();
-		entradaPergunta.close();
 
 	}
 

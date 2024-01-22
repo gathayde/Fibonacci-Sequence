@@ -2,7 +2,7 @@ package fibonacci;
 
 public class CalculoPosicaoFibonnaci {
 
-	public static void main(String[] args) {
+	public void CalculoPosicaoFibonnaci(int contadorEnt) {
 
 		long valorA = 0;
 		long valorB = 1;
@@ -11,7 +11,7 @@ public class CalculoPosicaoFibonnaci {
 
 		long valorC = valorA + valorB;
 		int contador = 1;
-		int contadorE = 11;
+		int contadorE = 5;
 		
 		for (valorA = 0; contador < contadorE; contador++) {
 
