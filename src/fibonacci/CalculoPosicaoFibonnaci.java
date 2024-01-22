@@ -25,7 +25,7 @@ public class CalculoPosicaoFibonnaci {
 
 		}
 		
-			System.out.println("O numero que você procura na " + contadorEnt + "ª é: " + valorC);
+			System.out.println("O numero que você procura na " + contadorEnt + "ª é: " + valorC + ".\n");
 			
 //			System.out.println("VLC " + valorC);
 //			System.out.println("VLA " + valorA);

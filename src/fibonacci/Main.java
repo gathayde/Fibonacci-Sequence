@@ -27,6 +27,8 @@ public class Main {
 				CalculoSequenciaFibonnaci valorE = new CalculoSequenciaFibonnaci();
 
 				valorE.CalculoSequencialFibonnaci(entradaValor.nextLong());
+				
+				resposta = "N";
 
 			}
 
@@ -42,6 +44,8 @@ public class Main {
 					CalculoPosicaoFibonnaci contadorE = new CalculoPosicaoFibonnaci();
 
 					contadorE.CalculoPosicaoFibonnaci(entradaValor.nextInt());
+					
+					resposta = "N";
 				}
 			}
 

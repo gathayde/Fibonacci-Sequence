@@ -28,7 +28,7 @@ public class CalculoSequenciaFibonnaci {
 
 		if (valorC == valorE) {
 			System.out.println("Esse numero FAZ parte da sequência Fibonacci.");
-			System.out.println("E ocupa a " + contador + "ª posição\n");
+			System.out.println("E ocupa a " + contador + "ª posição.\n");
 			
 //			System.out.println("VLC " + valorC);
 //			System.out.println("VLA " + valorA);
