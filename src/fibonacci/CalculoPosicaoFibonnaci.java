@@ -12,26 +12,16 @@ public class CalculoPosicaoFibonnaci {
 		long valorC = valorA + valorB;
 		int contador = 1;
 		int contadorE = contadorEnt;
-		
-		for (valorA = 0; contador < contadorE; contador++) {
 
+		for (valorA = 0; contador < contadorE; contador++) {
 
 			valorC = valorA + valorB;
 			valorA = valorB;
 			valorB = valorC;
-			
-//			System.out.println("VLC " + valorC);
-//			System.out.println("Cont." + contador);
 
 		}
-		
-			System.out.println("O numero que você procura na " + contadorEnt + "ª é: " + valorC + ".\n");
-			
-//			System.out.println("VLC " + valorC);
-//			System.out.println("VLA " + valorA);
-//			System.out.println("VLB " + valorB);
-//			System.out.println("Cont." + contador);
-	
+
+		System.out.println("O numero que você procura na " + contadorEnt + "ª é: " + valorC + ".\n");
 
 	}
 
