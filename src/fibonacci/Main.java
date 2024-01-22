@@ -7,39 +7,65 @@ public class Main {
 	public static void main(String[] args) {
 
 		Scanner entradaValor = new Scanner(System.in);
-		
+		Scanner entradaResposta = new Scanner(System.in);
+
+		String resposta = "";
 
 		System.out.println("Sequência Fibonacci v2024 by Gabriel Athayde\n");
 
-//		System.out.println("Gostaria de verificar um número? (S/N)");
+		boolean execusao = true;
 
-		System.out.println("Digite o número:");
-		
-		CalculoSequenciaFibonnaci valorE = new CalculoSequenciaFibonnaci();
-		
-		valorE.CalculoSequencialFibonnaci(entradaValor.nextLong());
-		
-//		System.out.println("Gostaria de saber qual o numero na sequência com base na sua posição? (S/N)");
+		while (execusao == true) {
 
-//		System.out.println("Deseja SAIR? (S/N)");
+			System.out.println("Gostaria de verificar um número? (S/N)");
+			resposta = entradaResposta.next();
 
-//		System.out.println("FIM");
+			if (resposta.contains("S")) {
 
-		/* Sequência Fibonacci v2024 
-		 * Gostaria de verificar um número? 
-		 * Digite o número:
-		 * Esse numero FAZ/NÃO FAZ parte da sequência Fibonacci. 
-		 * E ocupa a posição:
-		 * Gostaria de saber qual numero antecede e sucede a ele? 
-		 * O antecessor é: 
-		 * O sucessor é: 
-		 * Gostaria de saber qual o numero na sequência com base na sua posição? 
-		 * Digite em qual posição você quer saber o numero: 
-		 * O numero que você procura é: 
-		 * Deseja sair?
-		 */
+				System.out.println("Digite o número: ");
+
+				CalculoSequenciaFibonnaci valorE = new CalculoSequenciaFibonnaci();
+
+				valorE.CalculoSequencialFibonnaci(entradaValor.nextLong());
+
+			}
+
+			if (resposta.contains("N")) {
+
+				System.out.println("Gostaria de saber qual o numero na sequência com base na sua posição? (S/N)");
+
+				resposta = entradaResposta.next();
+
+				if (resposta.contains("S")) {
+					System.out.println("Digite em qual posição você quer saber o numero: ");
+
+					CalculoPosicaoFibonnaci contadorE = new CalculoPosicaoFibonnaci();
+
+					contadorE.CalculoPosicaoFibonnaci(entradaValor.nextInt());
+				}
+			}
+
+			if (resposta.contains("N")) {
+				System.out.println("Deseja sair? (S/N)");
+
+				resposta = entradaResposta.next();
+
+				if (resposta.contains("S")) {
+					System.out.println("Até logo!");
+					System.exit(0);
+
+				} else if (resposta.contains("N")) {
+					System.out.println("Vamos tentar novamente...\n");
+				}
+			}
+		}
+
+//		  Gostaria de saber qual numero antecede e sucede a ele? (S/N)
+//		  O antecessor é: 
+//		  O sucessor é:
 
 		entradaValor.close();
+		entradaResposta.close();
 
 	}
 

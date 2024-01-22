@@ -28,14 +28,16 @@ public class CalculoSequenciaFibonnaci {
 
 		if (valorC == valorE) {
 			System.out.println("Esse numero FAZ parte da sequência Fibonacci.");
-			System.out.println("E ocupa a posição: " + contador);
+			System.out.println("E ocupa a posição: " + contador + "\n");
+			
 //			System.out.println("VLC " + valorC);
 //			System.out.println("VLA " + valorA);
 //			System.out.println("VLB " + valorB);
 //			System.out.println("Cont." + contador);
 
 		} else {
-			System.out.println("Esse numero NÃO FAZ parte da sequência Fibonacci.");
+			System.out.println("Esse numero NÃO FAZ parte da sequência Fibonacci.\n");
+			
 //			System.out.println("VLC " + valorC);
 //			System.out.println("VLA " + valorA);
 //			System.out.println("VLB " + valorB);
