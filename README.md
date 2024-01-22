@@ -10,7 +10,7 @@ A sequência de Fibonacci é uma sequência de números inteiros, começando com
 
 Os números de Fibonacci são, portanto, os números que compõem a seguinte sequência (também conhecida como A000045 na OEIS):
 
-0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, ...
+1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, ...
 É importante destacar que a sequência de Fibonacci é infinita. Portanto, o ideal é que você defina um valor que tenha como objetivo e, ao alcançar esse objetivo, você decida uma nova meta para alcançar.
 
 A fórmula da sequência de Fibonacci
@@ -62,3 +62,6 @@ Esse numero NÃO FAZ parte da sequência Fibonacci.
 Em seguida, o sistema irá imprimir o número da sequência na posição informada:
 
 O numero que você procura na 10ª posição é: 55.
+
+
+Fontes: https://pt.wikipedia.org/wiki/Sequ%C3%AAncia_de_Fibonacci
